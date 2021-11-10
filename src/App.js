@@ -24,7 +24,7 @@ class App extends Component {
     };
     const { contacts } = this.state;
     const alreadyInContacts = contacts.find(
-      contact => contact.name === todo.name,
+      contact => contact.name === todo.name && contact.number === todo.number,
     );
     if (alreadyInContacts) {
       alert(`${alreadyInContacts.name} is already in contacts.`);
