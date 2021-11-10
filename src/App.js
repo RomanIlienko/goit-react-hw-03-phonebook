@@ -30,7 +30,14 @@ class App extends Component {
       alert(`${alreadyInContacts.name} is already in contacts.`);
       return;
     }
-
+    if (todo.name === '') {
+      alert('Please enter data');
+      return
+    }
+    if (todo.number === '') {
+      alert('Please enter the number')
+      return
+    }
     this.setState(prevState => ({
       contacts: [todo, ...prevState.contacts],
     }));
