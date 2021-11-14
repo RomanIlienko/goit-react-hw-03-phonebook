@@ -28,8 +28,10 @@ class TodoContact extends Component {
 
   render() {
     return (
-      <div className={s.titleText}>
-        <h1>Phonebook</h1>
+      <div>
+        <div className={s.Wrapper}>
+          <h1 className={s.titleText}>Phonebook</h1>
+        </div>
         <form onSubmit={this.handleSubmit} className={s.headStyle}>
           <label className={s.labelStyle}>
             Name
